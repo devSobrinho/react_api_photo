@@ -7,6 +7,10 @@ export const theme = {
     dark: '#000000',
     logoColor: '#35495e',
     mediumGray: '#DDDDDD',
+
+    validations: {
+      error: '#DC143C',
+    },
   },
   sizes: {
     small: '2.8rem',
