@@ -6,7 +6,6 @@ export const Image = styled.img`
   ${({ theme, imgSrc }) => css`
     width: 100%;
     height: 100%;
-    /* height: 100vh; */
   `}
 `;
 
@@ -14,13 +13,9 @@ export const Container = styled.div`
   ${({ theme, imgSrc }) => css`
     position: relative;
     margin: 0 auto;
-    background-color: black;
     display: flex;
     justify-content: center;
     align-items: center;
-
-    /* width: 100vw;
-    height: 100vh; */
 
     & ${ProfileInfoContainer} {
       position: absolute;

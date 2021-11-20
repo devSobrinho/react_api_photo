@@ -35,5 +35,11 @@ ul, ol {
   padding: ${({ theme }) => theme.spacings.medium};
  }
 
+ a {
+   text-decoration: none;
+   margin: 0;
+   padding: 0;
+ }
+
 
 `;
