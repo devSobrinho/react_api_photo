@@ -1,4 +1,4 @@
-export const loginMock = {
+export default {
   textHeading: 'Log in',
   textButton: 'Log in',
   methodForm: 'post',

@@ -1,12 +1,12 @@
 import { Login } from '.';
-import { loginMock } from './mock';
+import mock from './mock';
 
 export default {
   title: 'Login',
   component: Login,
   args: {
     valueInput: () => {},
-    ...loginMock,
+    ...mock,
   },
 };
 
