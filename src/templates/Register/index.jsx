@@ -4,10 +4,12 @@ import * as Styled from './styles';
 import { Register as RegisterComponent } from '../../components/Register';
 import mock from '../../components/Register/mock';
 
-export const Register = () => {
+function Register() {
   return (
     <>
       <RegisterComponent {...mock} />
     </>
   );
-};
+}
+
+export default Register;
