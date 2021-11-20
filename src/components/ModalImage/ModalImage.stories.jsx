@@ -5,8 +5,9 @@ export default {
   title: 'ModalImage',
   component: ModalImage,
   args: {
+    modalPhoto: true,
+    imgSrc: 'https://source.unsplash.com/random/500x800?r=2',
     userInfo: { ...mock },
-    imgSrc: 'https://source.unsplash.com/random/800x800?r=2',
   },
 };
 
