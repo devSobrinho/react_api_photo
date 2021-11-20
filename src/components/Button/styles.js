@@ -5,7 +5,7 @@ const invertColor = (theme) => css`
   color: ${theme.colors.white};
 `;
 
-export const Button = styled.button`
+export const Button = styled.input`
   ${({ theme, invertStyled }) => css`
     font-size: ${theme.fonts.sizes.small};
     font-weight: ${theme.fonts.weight.bolder};
