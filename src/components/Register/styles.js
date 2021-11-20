@@ -1,12 +1,17 @@
 import styled, { css } from 'styled-components';
 
 import { Container as ButtonContainer } from '../Button/styles';
+import { Title } from '../Heading/styles';
 
 export const Form = styled.form`
   ${({ theme }) => css`
     margin: 0 1.6rem;
     width: 100%;
     max-width: 34.3rem;
+
+    & ${Title} {
+      margin-bottom: 2.4rem;
+    }
   `}
 `;
 

@@ -1,6 +1,6 @@
 import P from 'prop-types';
+import { Link } from 'react-router-dom';
 import { useState } from 'react';
-import { useCallback } from 'react';
 import { toast } from 'react-toastify';
 import { IoReturnUpBack } from 'react-icons/io5';
 
@@ -11,7 +11,6 @@ import { passwordValidation } from '../../services/validations/passwordInput';
 import { Heading } from '../Heading';
 import { Input } from '../Input';
 import { Button } from '../Button';
-import { useEffect } from 'react';
 
 export const Register = ({
   textHeading,
@@ -56,9 +55,11 @@ export const Register = ({
 
   return (
     <Styled.Container>
-      <Styled.ReturnIcon>
-        <IoReturnUpBack size="2rem" />
-      </Styled.ReturnIcon>
+      <Link to="/">
+        <Styled.ReturnIcon>
+          <IoReturnUpBack size="2rem" color="black" />
+        </Styled.ReturnIcon>
+      </Link>
       <Styled.Form method={methodForm} action={actionForm}>
         <Heading as="h1">{textHeading}</Heading>
         <Styled.ContainerNext hidden={handleClick}>
