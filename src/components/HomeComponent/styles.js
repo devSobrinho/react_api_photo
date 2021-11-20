@@ -51,6 +51,14 @@ export const ContainerButtons = styled.div`
     display: flex;
     justify-content: center;
     margin-bottom: 2rem;
+    & a {
+      margin-right: 0.45rem;
+      margin-left: 0;
+    }
+    & a:nth-child(2) {
+      margin-right: 0;
+      margin-left: 0.45rem;
+    }
   `}
 `;
 

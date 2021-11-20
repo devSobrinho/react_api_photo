@@ -8,6 +8,7 @@ import { MenuLink } from '../MenuLink';
 import { Button } from '../Button';
 import { ProfileInfo } from '../ProfileInfo';
 import { SpanBar } from '../SpanBar';
+import { Link } from 'react-router-dom';
 
 export const HomeComponent = ({
   textLogo,
@@ -24,8 +25,12 @@ export const HomeComponent = ({
       <Styled.Container>
         <ProfileInfo {...info} />
         <Styled.ContainerButtons>
-          <Button text={textButtonOne} />
-          <Button text={textButtonTwo} invertStyled />
+          <Link to={`/login`}>
+            <Button text={textButtonOne} />
+          </Link>
+          <Link to={`/register`}>
+            <Button text={textButtonTwo} invertStyled />
+          </Link>
         </Styled.ContainerButtons>
 
         <SpanBar />
