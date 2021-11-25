@@ -13,6 +13,6 @@ export const ImageProfile = ({ imgSrc = '', size }) => {
 };
 
 ImageProfile.propTypes = {
-  size: P.oneOf(['small', 'medium', 'large']).isRequired,
+  size: P.oneOf(['small', 'medium', 'large', 'xlarge']).isRequired,
   imgSrc: P.string,
 };

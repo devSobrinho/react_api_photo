@@ -13,6 +13,10 @@ const imgSize = {
     height: ${theme.sizes.large};
     width: ${theme.sizes.large};
   `,
+  xlarge: (theme) => css`
+    height: ${theme.sizes.xlarge};
+    width: ${theme.sizes.xlarge};
+  `,
 };
 
 export const ContainerImage = styled.div`
