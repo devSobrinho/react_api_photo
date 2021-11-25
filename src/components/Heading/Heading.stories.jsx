@@ -4,11 +4,13 @@ export default {
   title: 'Heading',
   component: Heading,
   args: {
-    children: 'Register',
+    text: 'Register',
+    as: 'h1',
   },
-  argTypes: {
-    children: { type: 'string' },
-  },
+  // argTypes: {
+  //   text: { type: 'string' },
+  //   as: { type: 'string' },
+  // },
 };
 
 export const Template = (args) => {

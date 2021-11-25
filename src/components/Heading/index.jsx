@@ -4,7 +4,7 @@ import { useContext } from 'react';
 import * as Styled from './styles';
 
 export const Heading = ({
-  children,
+  text,
   size = 'huge',
   as,
   asStylesActive = false,
@@ -21,14 +21,14 @@ export const Heading = ({
         weight={weight}
         asStylesActive={asStylesActive}
       >
-        {children}
+        {text}
       </Styled.Title>
     </>
   );
 };
 
 Heading.propTypes = {
-  children: P.node.isRequired,
+  text: P.string.isRequired,
   as: P.oneOf(['h1', 'h2', 'h3']).isRequired,
   asStylesActive: P.bool,
   uppercase: P.bool,
