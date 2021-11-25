@@ -11,7 +11,7 @@ export const Logo = ({ text }) => {
           src="https://cdn-icons-png.flaticon.com/512/1099/1099294.png"
           alt="logo"
         />
-        <Heading as="h1">{text}</Heading>
+        <Heading as="h1" text={text} />
       </Styled.Container>
     </>
   );

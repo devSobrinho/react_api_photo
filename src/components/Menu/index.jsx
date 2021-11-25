@@ -5,8 +5,11 @@ import * as Styled from './styles';
 import { MenuLink } from '../MenuLink';
 import { useEffect } from 'react';
 import { SpanBar } from '../SpanBar';
+import mock from './mock';
 
-export const Menu = ({ links }) => {
+export const Menu = () => {
+  const { links } = mock;
+
   return (
     <>
       <Styled.Container>
@@ -22,6 +25,5 @@ export const Menu = ({ links }) => {
 };
 
 Menu.propTypes = {
-  links: P.arrayOf(P.shape(MenuLink.propTypes).isRequired).isRequired,
   // index: P.number,
 };

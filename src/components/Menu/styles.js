@@ -4,7 +4,9 @@ import { Container as MenuLinkContainer } from '../MenuLink/styles';
 
 export const Container = styled.div`
   ${({ theme }) => css`
-    border-top: 0.05rem solid rgba(0, 0, 0, 0.1);
+    margin: 0 auto;
+    max-width: 800px;
+    border-top: 0.05rem solid rgba(0, 0, 0, 0.3);
     padding: 0.9rem 1.5rem 2rem 1.5rem;
     display: flex;
     align-items: center;

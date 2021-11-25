@@ -22,5 +22,4 @@ Button.propTypes = {
   text: P.string.isRequired,
   invertStyled: P.bool,
   onClick: P.func,
-  // ...Paragraph.propTypes,
 };

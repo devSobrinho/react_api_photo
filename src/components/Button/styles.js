@@ -36,13 +36,13 @@ export const Container = styled.div`
     margin: 0.8rem auto;
     width: 100%;
 
-    /* & a {
+    & a {
       margin-right: 0.45rem;
       margin-left: 0;
     }
     & a:nth-child(2) {
       margin-right: 0;
       margin-left: 0.45rem;
-    } */
+    }
   `}
 `;
