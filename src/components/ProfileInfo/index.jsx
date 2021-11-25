@@ -16,9 +16,7 @@ export const ProfileInfo = ({
       <Styled.Container>
         <ImageProfile imgSrc={userPhoto} size="small" />
         <Styled.Content textStyled={textStyled}>
-          <Heading as="h3" asStylesActive>
-            {nameUser}
-          </Heading>
+          <Heading as="h3" asStylesActive text={nameUser} />
           <Paragraph
             size="small"
             lineHeight="small"
