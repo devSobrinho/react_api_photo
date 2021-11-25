@@ -1,18 +1,19 @@
-import { createStore } from 'redux';
-import { persistStore, persistReducer } from 'redux-persist';
-import storage from 'redux-persist/lib/storage'; // defaults to localStorage for web
+import { createStore, applyMiddleware } from 'redux';
+import { persistStore } from 'redux-persist';
+import createSagaMiddleware from 'redux-saga';
 
-import rootReducer from './reducers';
+import persistedReducers from './modules/reduxPersist';
+import rootReducer from './modules/rootReducer';
+import rootSaga from './modules/rootSaga';
 
-const persistConfig = {
-  key: 'api_photo',
-  storage,
-};
+const sagaMiddleware = createSagaMiddleware();
 
-const persistedReducer = persistReducer(persistConfig, rootReducer);
+const store = createStore(
+  persistedReducers(rootReducer),
+  applyMiddleware(sagaMiddleware),
+);
 
-export default () => {
-  let store = createStore(persistedReducer);
-  let persistor = persistStore(store);
-  return { store, persistor };
-};
+sagaMiddleware.run(rootSaga);
+
+export const persistor = persistStore(store);
+export default store;
